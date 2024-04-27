@@ -7,7 +7,14 @@ metadata:
 spec:
   containers:
   - name: foo-app
-    image: hashicorp/http-echo:0.2.3
+    image: hashicorp/http-echo:1.0.0
+    resources:
+      requests:
+        cpu: 100m
+        memory: 100Mi
+      limits:
+        cpu: 200m
+        memory: 200Mi
     args:
     - "-listen=0.0.0.0:8080"
     - "-text=foo"
