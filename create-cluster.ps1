@@ -1,0 +1,1 @@
+.\bin\kind.exe create cluster --config=./kind-config.yaml --name=k8s-training
